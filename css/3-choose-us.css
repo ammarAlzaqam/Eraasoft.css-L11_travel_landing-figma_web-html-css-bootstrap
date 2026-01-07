@@ -1,0 +1,35 @@
+#choose-us {
+  margin-top: clamp(45px, 7vw, 50px);
+
+  .container {
+    h2 {
+      margin-bottom: clamp(32px, 6vw, 43px);
+    }
+    .box {
+      img {
+        width: clamp(48px, 9vw, 60px);
+        margin: 0 0 27px 40px;
+
+        @media (max-width: 991px) {
+          margin-left: 0;
+        }
+      }
+
+      h5 {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 100%;
+        margin-bottom: 24px;
+      }
+
+      p {
+        width: 241px;
+        max-width: 90%;
+
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 120%;
+      }
+    }
+  }
+}

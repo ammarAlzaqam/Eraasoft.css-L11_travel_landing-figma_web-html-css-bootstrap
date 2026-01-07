@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("./1-header.css");
+@import url("./2-hero-sec.css");
+@import url("./3-choose-us.css");
+@import url("./4-dream.css");
+@import url("./5-inspiration.css");
+@import url("./6-hotels.css");
+@import url("./7-things.css");
+
+:root {
+  --primary: #25292c;
+  --secondary: #fffffc;
+  --accent: #1576d6;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+  font-family: "Barlow", sans-serif;
+  color: var(--primary);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: var(--secondary);
+}
+
+.space-top {
+  margin-top: clamp(45px, 8vw, 60px);
+}
+
+.container {
+  @media (min-width: 1400px) {
+    width: 1264px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.btn {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 2%;
+
+  background-color: var(--accent);
+  color: var(--secondary);
+  transition: opacity 0.3s ease;
+  &:hover {
+    background-color: var(--accent);
+    opacity: 0.8;
+    color: var(--secondary);
+  }
+}
+
+.title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 45px;
+
+  &.light {
+    color: #fffffc;
+    line-height: 140%;
+  }
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+
+  &.light {
+    color: #fffffc;
+  }
+
+  &.big {
+    color: #fffffc;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 30px;
+    text-transform: capitalize;
+  }
+}
+
+.des {
+  font-weight: 400;
+  font-size: clamp(14px, 1.5vw, 16px);
+  line-height: 140%;
+  letter-spacing: 0.5px;
+
+  &.light {
+    color: #fffffc;
+  }
+}

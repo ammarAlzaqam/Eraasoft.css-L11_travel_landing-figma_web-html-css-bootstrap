@@ -1,0 +1,107 @@
+header {
+  padding-block: 14px;
+
+  @media (max-width: 991px) {
+    width: 100%;
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    padding-block: 0;
+  }
+
+  .container {
+    .left {
+      gap: 6px;
+
+      img {
+        width: 24px;
+      }
+
+      h6 {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 100%;
+        letter-spacing: 2%;
+        @media (max-width: 991px) {
+          color: var(--secondary);
+        }
+      }
+    }
+
+    nav {
+      gap: 48px;
+
+      a {
+        background-image: linear-gradient(
+          to right,
+          var(--accent),
+          var(--accent) 50%,
+          #000 50%
+        );
+        background-size: 200% 100%;
+        background-position: -100%;
+        display: inline-block;
+        padding: 5px 0;
+        position: relative;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.2s ease-in-out;
+
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 2%;
+
+        &:before {
+          content: "";
+          background: var(--accent);
+          display: block;
+          position: absolute;
+          bottom: -3px;
+          left: 0;
+          width: 0;
+          height: 2px;
+          transition: all 0.2s ease-in-out;
+        }
+
+        &:hover {
+          background-position: 0;
+        }
+
+        &:hover::before {
+          width: 100%;
+        }
+      }
+    }
+
+    .right {
+      gap: 8px;
+
+      .register-btn,
+      .signIn-btn {
+        padding: 10px 18px;
+
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 2%;
+      }
+
+      .register-btn {
+        background-color: transparent;
+        border-color: var(--accent);
+        color: var(--accent);
+        transition: color 0.3s ease, background 0.3s ease;
+        &:hover {
+          color: var(--secondary);
+          border-color: var(--accent);
+          background-color: var(--accent);
+          opacity: 1;
+        }
+      }
+    }
+
+    .menu-icon {
+      width: 32px;
+    }
+  }
+}
