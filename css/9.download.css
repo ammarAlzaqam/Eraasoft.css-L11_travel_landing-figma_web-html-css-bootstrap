@@ -1,0 +1,50 @@
+#download {
+  width: 100%;
+
+  .container {
+    .content {
+      position: relative;
+      z-index: 5;
+      background: linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 0.5) 0%,
+          rgba(0, 0, 0, 0) 100%
+        ),
+        url(../images/download/bg.jpg) center/cover;
+      padding: clamp(41px, 6vw, 50px) clamp(12px, 3vw, 30px);
+      border-radius: 8px;
+
+      @media (min-width: 992px) {
+        padding: 64px 69px;
+      }
+
+      > * {
+        position: relative;
+        z-index: 5;
+      }
+
+      h2.title {
+        z-index: 5;
+        width: 580px;
+        max-width: 100%;
+        margin-bottom: 30px;
+
+        @media (min-width: 992px) and (max-width: 1199px) {
+          text-shadow: 3px 3px 3px black;
+        }
+      }
+
+      button.btn {
+        padding: 12px 18px;
+      }
+
+      img {
+        position: absolute;
+        z-index: 1;
+        height: 100%;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+}

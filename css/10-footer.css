@@ -1,0 +1,66 @@
+footer {
+  .container {
+    .content {
+      > .head {
+        padding-top: 62px;
+      }
+
+      .row {
+        padding-top: clamp(30px, 7vw, 80px);
+
+        .logo-box {
+          .head {
+            margin-bottom: 6px;
+
+            img {
+              width: 24px;
+            }
+
+            h6 {
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 100%;
+              letter-spacing: 0.35px;
+            }
+          }
+
+          p.des {
+            margin-left: 28px;
+            width: 197px;
+            max-width: 100%;
+
+            @media (max-width: 575px) {
+              margin-left: 0;
+            }
+          }
+        }
+
+        .box {
+          .footer-title {
+            margin-bottom: 20px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0.28px;
+          }
+
+          p.des {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .copyright {
+    padding: 10px clamp(70px, 18vw, 205px);
+    background-color: #f6f3ef;
+
+    .copyright-text {
+      color: #6c757d;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 140%;
+    }
+  }
+}

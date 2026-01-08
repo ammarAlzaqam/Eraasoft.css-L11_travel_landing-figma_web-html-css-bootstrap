@@ -7,6 +7,9 @@
 @import url("./5-inspiration.css");
 @import url("./6-hotels.css");
 @import url("./7-things.css");
+@import url("./8-footprints.css");
+@import url("./9.download.css");
+@import url("./10-footer.css");
 
 :root {
   --primary: #25292c;
@@ -79,8 +82,13 @@ a {
   line-height: 45px;
 
   &.light {
+    font-size: clamp(20px, 5vw, 28px);
     color: #fffffc;
     line-height: 140%;
+  }
+
+  &.footer {
+    line-height: 120%;
   }
 }
 
@@ -110,5 +118,14 @@ a {
 
   &.light {
     color: #fffffc;
+  }
+
+  &.footer {
+    font-size: 14px;
+    color: #6c757d;
+  }
+
+  a {
+    color: var(--accent);
   }
 }

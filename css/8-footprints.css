@@ -1,0 +1,29 @@
+#footprints {
+  .container {
+    h2.title {
+      margin-bottom: clamp(2rem, 8vw, 91px);
+    }
+
+    .box {
+      text-align: center;
+
+      img {
+        width: 60px;
+        margin-bottom: clamp(24px, 3vw, 29px);
+      }
+
+      data {
+        font-weight: 700;
+        font-size: 37.66px;
+        line-height: 100%;
+        padding: 10px;
+      }
+
+      span {
+        font-weight: 400;
+        font-size: 14.77px;
+        line-height: 100%;
+      }
+    }
+  }
+}
